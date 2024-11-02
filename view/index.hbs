@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merzi Caniz P. - Venta de Vehiculos</title>
+  <link rel="stylesheet" href="/public/assets/css/styles-i.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ {{> header}}
+  <main>
+    <section class="hero">
+      <div class="profile-card">
+        <div class="profile-image">
+          <img src="/public/Imagenes/PRF.jpg" alt="Imagen de Perfil">
+        </div>
+        <div class="profile-info">
+          <h1>Venta de Vehiculos</h1>
+          <p>CARRO DE TODO TIPO A TU DISPOCICION</p>
+        </div>
+        <div class="profile-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="project-grid">
+        <div class="project-card">
+          <a href="/public/template/carros-electricos.html">
+            <img src="/public/Imagenes/TABLERO.png" alt="Proyecto 1" class="project-image">
+            <h3>CARROS ELECTRICOS</h3>
+            <p>Los carros electricos son buenos en mucha maneras ayudan al medio ambien</p>
+            <p>y no se contamina mucho quiere saber has click a esta ventana</p>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="/public/template/carro-gasolina.html">
+            <img src="/public/Imagenes/SO.png" alt="Proyecto 2" class="project-image">
+            <h3>CARROS DE GASOLINA</h3>
+          </a>
+        </div>
+        <div class="project-card">
+          <a href="/public/template/carro-disel.html">
+            <img src="/public/Imagenes/ESTADISTICA.png" alt="Proyecto 3" class="project-image">
+            <h3>CARRO DE DISEL</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+   {{> footer}}
+</body>
+</html>
