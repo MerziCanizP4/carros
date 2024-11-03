@@ -3,7 +3,7 @@ const hbs = require('hbs')
 require('dotenv').config()
 
 const app = express()
-const port = process.env.PORT
+const port = process.env.PORT;
 
 
 app.set('view engine', 'hbs')
@@ -13,30 +13,21 @@ hbs.registerPartials(__dirname +'/views/partials')
 app.use(express.static('public'))
 
 app.get('/', (req,res) => {
-  res.render('index',{
-    nombre:'Merzi Caniz'
-  
-  })
+  res.render('index')
 })
 
 app.get('/carro-disel', (req, res) => {
-  res.render('carro-disel', {
-    
-  });
-});
+  res.render('carro-disel')
+})
 
 app.get('/carro-gasolina', (req, res) => {
-  res.render('carro-gasolina', {
+  res.render('carro-gasolina')
+})
 
-  });
-});
-
-app.get('/carros-electricos', (req, res) => {
-    res.render('carros-eketricos', {
-  
-    });
-  });
+app.get('/carro-electrico', (req, res) => {
+    res.render('carro-electrico')
+  })
   
 app.listen(port,() =>{
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`Example app listening at http://localhost:${port}`)
 })
